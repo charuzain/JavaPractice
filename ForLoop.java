@@ -4,6 +4,8 @@ public class ForLoop {
     for (int i = 0; i < 10; i++) {
       sum += i;
     }
-  System.out.println("Sum of first 10 number is " + sum);
+    System.out.println("Sum of first 10 number is " + sum);
   }
 }
+
+
