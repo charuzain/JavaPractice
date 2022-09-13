@@ -24,12 +24,28 @@ class Square {
   int area() {
     return side * side;
   }
- 
+
   int perimeter() {
     return 4 * side;
   }
 
 }
+//Create a class Rectangle & with a method to initialize its side, calculating area, perimeter etc
+
+class Rectangle {
+  int length;
+  int breadth;
+
+  public int area() {
+    return length * breadth;
+  }
+
+  public int perimeter() {
+    return 2 * (length + breadth);
+  }
+}
+
+
 
 
 public class Problem2 {
@@ -49,6 +65,15 @@ public class Problem2 {
     int perimeter = sq.perimeter();
     System.out.println(area);
     System.out.println(perimeter);
+
+
+    // calcuate area and perimeter of rectangle
+
+    Rectangle rec = new Rectangle();
+    rec.length = 5;
+    rec.breadth = 15;
+    System.out.println(rec.area());
+    System.out.println(rec.perimeter());
   }
 }
 
