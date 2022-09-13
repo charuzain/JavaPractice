@@ -45,6 +45,20 @@ class Rectangle {
   }
 }
 
+//Create a class Circlr with a method to initialize its radius, calculating area, perimeter etc
+
+class Circle {
+  int radius;
+
+  public double area() {
+    return 3.14 * radius * radius;
+  }
+  
+  public double perimeter() {
+    return 2 * 3.14 * radius;
+  }
+  
+}
 
 
 
@@ -74,6 +88,13 @@ public class Problem2 {
     rec.breadth = 15;
     System.out.println(rec.area());
     System.out.println(rec.perimeter());
+
+    // calcuate area and perimeter of circle
+
+    Circle cr = new Circle();
+    cr.radius = 5;
+    System.out.println(cr.area());
+    System.out.println(cr.perimeter());
   }
 }
 
