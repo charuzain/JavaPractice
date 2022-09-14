@@ -9,17 +9,24 @@ class Cylinder {
   double radius;
   double height;
 
-  void setRadius(double r) {
+  // using constructor
+
+  public Cylinder(double r, double h) {
     radius = r;
-  }
+    height = h;
+   }
+
+  // void setRadius(double r) {
+  //   radius = r;
+  // }
 
   double getRadius() {
     return radius;
   }
 
-  void setHeight(double h) {
-    height = h;
-  }
+  // void setHeight(double h) {
+  //   height = h;
+  // }
 
   double getHeight() {
     return height;
@@ -38,9 +45,9 @@ class Cylinder {
 public class Problem3 {
   public static void main(String[] args) {
 
-    Cylinder cyl = new Cylinder();
-    cyl.setHeight(1.0);
-    cyl.setRadius(1);
+    Cylinder cyl = new Cylinder(1.0 , 1.0);
+    // cyl.setHeight(1.0);
+    // cyl.setRadius(1);
     System.out.println(cyl.getHeight());
     System.out.println(cyl.getRadius());
     System.out.println(cyl.surfaceArea());
